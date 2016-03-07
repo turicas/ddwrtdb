@@ -1,6 +1,21 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# Copyright 2016 Álvaro Justen <https://github.com/turicas/rows/>
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import sys
 
 from collections import OrderedDict
@@ -32,7 +47,7 @@ def _router_detail(router_id):
     return response.content
 
 
-def router_details(router_id):
+def router_specs(router_id):
     html = _router_detail(router_id)
     tree = html_tree(html)
 
@@ -142,11 +157,11 @@ def search(query, output, all):
     _create_response(result, output)
 
 
-@cli.command(help='Retrieve router details')
+@cli.command(help='Retrieve router specs')
 @click.argument('router_id')
 @click.option('--output', help='Output file to save result (CSV, HTML etc.)')
-def details(router_id, output):
-    result = router_details(router_id)
+def specs(router_id, output):
+    result = router_specs(router_id)
     _create_response(result, output)
 
 
