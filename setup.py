@@ -49,7 +49,6 @@ The command-line interface is pretty simple to use: `read the README
 <https://github.com/turicas/ddwrtdb>`_.
 '''.strip()
 
-
 setup(name='ddwrtdb',
       description=('Simple CLI to search on DD-WRT router database and '
                    'retrieve router information.'),
