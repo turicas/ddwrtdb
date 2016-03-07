@@ -103,18 +103,18 @@ The result will looks like this:
     ddwrtdb search tp-link --output=tp-link.csv
 
 
-### Retrieving Router Details
+### Retrieving Router Specs
 
-Subcommand: `details`. Retrieve information about a router, like chipset, RAM
-and Flash sizes.
+Subcommand: `specs`. Retrieve information about a router, like chipset, RAM and
+Flash sizes.
 
 Syntax:
 
-    ddwrtdb details [--output=<FILENAME>] <router_id>
+    ddwrtdb specs [--output=<FILENAME>] <router_id>
 
 Example:
 
-    ddwrtdb details 575  # cheap and cool router
+    ddwrtdb specs 575  # cheap and cool router
 
 The result will looks like this:
 
