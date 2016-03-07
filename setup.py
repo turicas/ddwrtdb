@@ -18,10 +18,7 @@
 from setuptools import setup
 
 
-INSTALL_REQUIREMENTS = ['click',
-                        'lxml',
-                        'requests',
-                        'rows > 0.1.1']
+INSTALL_REQUIREMENTS = ['click', 'lxml', 'requests', 'rows > 0.1.1']
 EXTRA_REQUIREMENTS = {
         'xls': ['xlrd', 'xlwt'],
         'xlsx': ['openpyxl'], }
@@ -53,7 +50,7 @@ setup(name='ddwrtdb',
       description=('Simple CLI to search on DD-WRT router database and '
                    'retrieve router information.'),
       long_description=LONG_DESCRIPTION,
-      version='0.1.0',
+      version='0.1.1',
       author=u'Álvaro Justen',
       author_email='alvarojusten@gmail.com',
       url='https://github.com/turicas/ddwrtdb/',
