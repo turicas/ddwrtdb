@@ -32,6 +32,7 @@ SQLite).
 
 To install, just run:
 
+    pip install https://github.com/turicas/rows/archive/develop.zip
     pip install ddwrtdb
 
 If you want support for ``XLS``, also run:

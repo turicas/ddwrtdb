@@ -23,18 +23,18 @@ XLSX and SQLite.
 If you already have [Python pip installer](https://pypi.python.org/pypi/pip),
 get it directly from [PyPI](http://pypi.python.org/pypi/ddwrtdb) by running:
 
+    pip install https://github.com/turicas/rows/archive/develop.zip
     pip install ddwrtdb
 
-If you have a strong heart, install the bleeding edge version:
-
-    pip install git+https://github.com/turicas/ddwrtdb.git@develop
+The first command will install the latest version of the rows library, which is
+needed (the current stable version is not enough).
 
 To install without pip, clone the repo and use `setup.py`:
 
+    # remember to install dependencies manuallly
     git clone https://github.com/turicas/ddwrtdb.git
     cd rows
     python setup.py install
-
 
 > Note: if you want support for exporting XLS and XLSX files, run:
 
