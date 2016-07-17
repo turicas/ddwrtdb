@@ -51,7 +51,7 @@ setup(name='ddwrtdb',
       description=('Simple CLI to search on DD-WRT router database and '
                    'retrieve router information.'),
       long_description=LONG_DESCRIPTION,
-      version='0.1.1',
+      version='0.1.2',
       author=u'Álvaro Justen',
       author_email='alvarojusten@gmail.com',
       url='https://github.com/turicas/ddwrtdb/',

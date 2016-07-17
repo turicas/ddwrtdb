@@ -29,7 +29,7 @@ import requests
 import rows
 
 from lxml.html import fromstring as html_tree
-from rows.plugins.html import tag_text
+from rows.plugins.html import extract_text
 from rows.plugins.html import tag_to_dict
 
 
@@ -79,10 +79,10 @@ def router_images(router_id):
         file_data = tag_to_dict(row.filename)
         absolute_url = url_join(URL_ROUTER_SEARCH,
                                 url_quote(file_data['href']))
-        return {'date': tag_text(row.date),
-                'description': tag_text(row.description),
+        return {'date': extract_text(row.date),
+                'description': extract_text(row.description),
                 'filename': file_data['text'],
-                'size': tag_text(row.size),
+                'size': extract_text(row.size),
                 'url': absolute_url, }
 
     return rows.transform(fields, transform, table)
